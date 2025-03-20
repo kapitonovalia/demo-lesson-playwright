@@ -49,10 +49,6 @@ export class OrderPage extends BasePage {
     await expect(this.trackNumberTitle).toBeVisible()
     await expect(this.trackNumberTitle).toContainText('Tracking code:')
   }
-  async checkStatusCodeTitle(): Promise<void> {
-    await expect(this.trackNumberTitle).toBeVisible()
-    await expect(this.trackNumberTitle).toContainText('Enter the tracking code')
-  }
   async getTrackingId(): Promise<string> {
     const innerText = await this.notificationPopupText.innerText()
     const id = innerText.match(/\d{4}/)
