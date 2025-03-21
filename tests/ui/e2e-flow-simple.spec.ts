@@ -94,4 +94,5 @@ test.describe('Tests', async () => {
     await statusPage.checkOrderStatus
     await statusPage.checkStatusDescription()
   })
+
 })
