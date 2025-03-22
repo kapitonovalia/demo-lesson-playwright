@@ -18,7 +18,7 @@ export class Button {
     if (expected) {
       await expect(this.buttonLocator).toBeDisabled()
     } else {
-      await expect(this.buttonLocator).toBeDisabled()
+      await expect(this.buttonLocator).toBeEnabled()
     }
   }
 }
