@@ -83,7 +83,7 @@ test.describe('Tests', async () => {
     await orderPage.submit.click()
   })
 
-  test.only('TL-18-5 Tracking order and check status page', async ({ page }) => {
+  test('TL-18-5 Tracking order and check status page', async ({ page }) => {
     const loginPage = new LoginPage(page)
     await loginPage.open()
     const orderPage = await loginPage.signIn(USERNAME, PASSWORD)
